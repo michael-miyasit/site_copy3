@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <!-- メモ欄
+  ・要素を包含ブロックの左右どちらかの側に沿うように設置し、テキストやインライン要素がその周りを回りこめるように定義cssの「float:」
+  ・これ以上縮まないようにする css「min-height:」
+  ・クラスの付け外しができるjs「open.addEventListener('click', function(){ nav.classList.toggle('show');」
+  ・@media での値の変更は消すのではなく、上書きする必要がある
+  -->
+
+
+<header>
+  <div id="open"> 
+    <img src="img/logo.png" alt="ロゴ">
+    <div class="bars"><i class="fa-solid fa-bars fa-lg"></i></div>
+  </div>
+</header>
+<section class="nav">
+  <ul>
+    <li><a href="#"><i class="fa-solid fa-angle-right"></i>TOP</a></li>
+    <li><a href="#"><i class="fa-solid fa-angle-right"></i>MASSAGE</a></li>
+    <li><a href="#"><i class="fa-solid fa-angle-right"></i>GALLERY</a></li>
+    <li><a href="#"><i class="fa-solid fa-angle-right"></i>BRAND</a></li>
+    <li><a href="#"><i class="fa-solid fa-angle-right"></i>PROJECT</a></li>
+    <li><a href="#"><i class="fa-solid fa-angle-right"></i>COMPANY</a></li>
+  </ul>
+  <div class="SNS">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+</section>
+<section class="sidebar">
+  <div class="sideContents">
+    <img src="img/logo.png" alt="ロゴ" class="logo">
+    <ul>
+      <li><a href="#">TOP</a></li>
+      <li><a href="#">MESSAGE</a></li>
+      <li><a href="#">GALLERY</a></li>
+      <li><a href="#">BRAND</a></li>
+      <li><a href="#">PROJECT</a></li>
+      <li><a href="#">COMPANY</a></li>
+    </ul>
+  </div>
+  <div class="sideSNS">
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+</section>
+<section class="main">
+  <img src="img/mainImg.jpg" alt="">
+  <div class="text">
+    <h2 class="tittle">MESSAGE</h2>
+    <p>ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社。ホームページサンプル株式会社では最新技術と自然との調和を目な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。</p>
+  </div>
+</section>
+<section class="photoWrapper">
+  <div class="imgs1">
+    <img src="img/photo01.jpg" alt="ジッパー">
+    <img src="img/photo02.jpg" alt="服">
+    <img src="img/photo03.jpg" alt="ジーパン">
+    <img src="img/photo04.jpg" alt="モデル">
+    <img src="img/photo05.jpg" alt="ダウン">
+    <img src="img/photo06.jpg" alt="スーツ">
+  </div>
+  <div class="imgs2">
+    <img src="img/photo07.jpg" alt="モデル">
+  </div>
+  <div class="imgs3">
+    <img src="img/photo08.jpg" alt="服">
+    <img src="img/photo09.jpg" alt="シューズ">
+    <img src="img/photo10.jpg" alt="ハット">
+    <img src="img/photo11.jpg" alt="ウォッチ">
+    <img src="img/photo12.jpg" alt="モデル">
+    <img src="img/photo13.jpg" alt="シャツ">
+  </div>
+</section>
+<section class="brand">
+  <div class="container">
+    <h2 class="tittle">BRAND</h2>
+    <div class="comment">
+      <ul>
+        <li>
+          <img src="img/logo01.png" alt="ロゴ">
+          <p>ホームページサンプル株式会社では最動かす企業を目指します。</p>
+        </li>
+        <li>
+          <img src="img/logo02.png" alt="ロゴ">
+          <p>革新的な技術で世の中を動かす企業を目します。世の中を動かす。</p>
+        </li>
+        <li>
+          <img src="img/logo03.png" alt="ロゴ">
+          <p>株式会社では最動かす企業を目指しますージン企業を目指します。</p>
+        </li>
+        <li>
+          <img src="img/logo04.png" alt="ロゴ">
+          <p>株式会社では最動かす企業を指しますージサン企業を目指します。</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+</section>
+<section class="project">
+  <div class="container">
+    <h2 class="tittle">PROJECT</h2>
+    <div class="text">
+      <img src="img/photo14.jpg" alt="じいさん">
+      <p>
+        ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な革新的な革新的な技術で世の中を技術で世の中を技術で世の中を動かす企業を目指します。<br> <br>
+        ホームページサンプル株式会社。ホームページサンプル最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社。ホームページサンプル最新技術と自然との調和を目指し調和を目指し調和を目指します。革新的な技術で世の中を動かす企業を目指します。
+      </p>
+    </div>
+    <div class="text2">
+      <img src="img/photo15.jpg" alt="機械">
+      <p>
+        ホームページサンプル株式会社では最新技術と自然との調和を目指します。革新的な革新的な革新的な技術で世の中を技術で世の中を技術で世の中を動かす企業を目指します。
+        <br><br>
+        ホームページサンプル株式会社。ホームページサンプル最新技術と自然との調和を目指します。革新的な技術で世の中を動かす企業を目指します。ホームページサンプル株式会社。ホームページサンプル最新技術と自然との調和を目指し調和を目指し調和を目指します。革新的な技術で世の中を動かす企業を目指します。
+      </p>
+    </div>
+  </div>
+  
+
+
+
+
+</section>
+<section class="company">
+  <div class="container">
+    <h2 class="tittle">COMPANY</h2>
+    <div class="address">
+      <p>
+        〒103-1234        <br>
+        見本県見本市仮区見本町1-3-5        <br>
+        TEL 01234-567-8901        <br>
+        e-Mail info@example.com        <br>
+        営業時間 10:00〜20:00（水曜定休）        <br>
+        ※都合により休業する場合がございます
+      </p>
+      <div class="ggmap">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12794.37516750043!2d136.931998!3d36.708298!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x2ade3e8e4c2801b8!2z56aP5bKh6aeF!5e0!3m2!1sja!2sus!4v1646620279689!5m2!1sja!2sus" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+  
+
+  
+   
+</section>
+
+<footer>
+  <div class="copyright">
+    <p>Copyright(c) 2016 Sample Inc. All Rights Reserved. Design by <a href="#">http://f-tpl.com</a></p>
+    
+  </div>
+</footer>
+
+
+
+
+ 
+
+<script src="js/main.js"></script>
+</body>
+</html>

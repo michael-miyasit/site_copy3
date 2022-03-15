@@ -1,0 +1,448 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+
+
+
+
+
+
+
+
+/* common */
+
+html {
+    width: 100%;
+}
+
+body {
+  background: #000;
+  color:#fff;
+  width: 80%;
+  margin-right: auto;
+  font: 300 14px / 1.9 "Noto Sans JP", Arial, Verdana, 游ゴシック, YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", メイリオ, Meiryo, sans-serif;
+}
+
+.container {
+    width: 77%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100px;
+}
+
+.tittle {
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+    font-size: 20px;
+    border-bottom: 3px solid #fff;
+    margin: 0 auto 50px;
+    padding: 0 0 20px;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+
+header #open {
+    text-align: center;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background: #000;
+    position: fixed;
+    z-index: 5;
+}
+
+header img {
+    margin-top: 20px;
+}
+
+header .bars {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+}
+
+
+/* nav */
+
+.nav {
+    position: fixed;
+    width: 100%;
+    background: #000;
+    transform: translateY(-430px);
+    transition: all .5s;
+}
+.nav.show {
+    transform: translateY(60px);
+}
+.nav li {
+    border-bottom: 1px solid #fff;
+}
+
+.nav a {
+    width: 100%;
+    color: #fff;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+    display: block;
+}
+.nav a:hover {
+   text-decoration: underline;
+}
+.nav i {
+    margin: 20px 15px;
+}
+.nav .SNS {
+    border-bottom: 1px solid #fff;
+    font-size: 20px;
+}
+.nav .SNS a {
+    display: inline;
+    margin: 0px;
+    height: 45px;
+    padding: 0;
+}
+/* sidebar */
+
+.sidebar {
+    background: #000;
+    width: 16%;
+    height: 100%;
+    padding-left: 4%;
+    font-size: 14px;
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+    position: fixed;
+    right: 0;
+}
+
+.sidebar .logo {
+    width: 100px;
+    margin: 30px 0 50px;
+}
+
+.sidebar ul a {
+  color: #fff;
+  text-decoration: none
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+.sideContents li {
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.sideSNS i {
+    margin-top: 70px;
+    font-size: 22px;
+    margin-right: 10px;
+    color: #fff;
+}
+.sideSNS i:hover {
+   color: hsl(0, 0%, 70%);
+}
+
+/* main */
+
+.main img {
+    width: 100%;
+}
+
+.main .text {
+    margin: 80px auto 0;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+}
+.main h2 {
+    font-family: 'Modern Antiqua', 'Noto Sans JP',serif;
+    font-size: 20px;
+    border-bottom: 3px solid #fff;
+    margin: 0 auto 50px;
+    padding: 0 0 20px;
+    display: inline-block;
+}
+.main p {
+    text-align: start;
+    font-size: 15px;
+}
+
+/* photoWrapper */
+
+.photoWrapper .imgs1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.imgs1 img {
+    width: calc(100% / 3);
+    flex: 1;    
+
+}
+.imgs2 img {
+    width: 100%;
+    vertical-align: bottom;
+}
+.imgs3 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.imgs3 img {
+    width: calc(100% / 3);
+}
+
+/* .brand */
+.brand {
+    text-align: center;
+    margin: 80px 0 0;
+}
+.brand .container {
+    border-bottom: 1px solid #fff;
+}
+.brand .comment {
+    margin: 60px 0 40px;
+}
+.brand ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 6.5%;
+}
+.brand li {
+    text-align: start;
+    width: 18%;
+}
+.brand img {
+    width: 100%;
+}
+
+
+/* project */
+
+.project {
+    text-align: center;
+    margin: 75px 0 0;
+}
+.project .container{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 120px;
+}
+
+.project .text {
+    min-height: 250px;
+    margin-bottom: 80px;
+}
+.project img {
+    float: left;
+    width: 370px;
+    margin: 20px;
+}
+
+.project p {
+    text-align: left;    
+}
+
+
+
+
+/* company */
+.company .container {
+    text-align: center;
+    margin: 80px auto 0;
+}
+
+.company .address {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0 0;
+}
+.company p {
+    text-align: left;
+}
+.ggmap {
+    width: 60%;
+}
+
+
+/* footer */
+footer .copyright {
+    margin: 200px 0 70px;
+    text-align: center;
+}
+footer a {
+    display: inline;
+    text-decoration: none;
+}
+
+@media(max-width: 640px) {
+    .main .text {
+        margin: 70px auto 0;
+        width: 95%;
+    }
+
+
+    .photoWrapper .imgs1 {
+        display: block;
+        width: 100%;
+        
+    }
+    .photoWrapper img {
+        width: 100%;
+        vertical-align: bottom;
+    }
+
+    .project img {
+        float: none;
+        width: 100%;
+        max-width: 370px;
+        margin: 0 auto 20px;
+    }
+
+    .company .address {
+        display: block;
+        margin: 30px 0 0;
+    }
+    .ggmap {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    footer .copyright {
+        margin: 100px 0 70px;
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 800px) {
+    .sidebar {
+        display: none;
+    }
+    
+    body {
+        width: 100%;
+    }
+
+    .main img {
+        margin-top: 60px;
+    }
+
+    .brand .comment {
+        margin: 0 0 40px;
+    }
+    .brand ul {
+        display: block;
+        list-style: none;
+        margin: 0 auto;
+    }
+    .brand li {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .brand li img {
+        width: 170px;
+    }
+}
+@media(min-width: 801px) {
+    header , .nav{
+        display: none;
+    }
+    
+}
